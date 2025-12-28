@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.title {
+  color: #1e5b33;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  border-bottom: 2px solid #a3d9a5;
+  padding-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.tableContainer {
+    border: 1px solid #a3d9a5;
+    border-radius: 12px;
+    background: white;
+    flex: 1; 
+    overflow-y: auto; 
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem; 
+}
+
+.th {
+  background-color: #f0fdf4;
+  color: #1e5b33;
+  font-weight: 700;
+  padding: 1.5vh 1rem;
+  text-align: left;
+  position: sticky; 
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #a3d9a5;
+}
+
+.td {
+  padding: 1.5vh 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.textBtn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.editBtn { background-color: #facc15; color: #422006; }
+.printBtn { background-color: #1e5b33; color: white; }
+.deleteBtn { background-color: #dc3545; color: white; }
+
+.noOrders {
+    color: #888;
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+}

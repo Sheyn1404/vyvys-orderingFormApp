@@ -1,0 +1,7 @@
+services:
+  vyvys-garden:
+    build: .
+    container_name: vyvys-garden-app
+    restart: always
+    ports:
+      - "8080:80"

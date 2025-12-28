@@ -1,0 +1,20 @@
+:root {
+  --primary-green: #1e5b33; 
+  --secondary-green: #a3d9a5; 
+  --bg-light: #f8f9fa;
+  --text-dark: #333;
+  --danger-red: #dc3545;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; 
+  color: var(--text-dark);
+}
+
+* {
+  box-sizing: border-box;
+}

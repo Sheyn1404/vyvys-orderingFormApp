@@ -1,0 +1,158 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  flex: 1; 
+}
+
+.label {
+  font-weight: 700;
+  color: #1e5b33;
+  font-size: 1.1rem;
+}
+
+.input, .select, .textarea {
+  padding: 1.2vh 0.2rem;
+  font-size: 1.1rem;
+  background-color: #ffffff; 
+  color: #333333;
+  border: 2px solid #a3d9a5; 
+  border-radius: 12px;
+  outline: none;
+  width: auto;
+  font-family: inherit;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: #1e5b33;
+  box-shadow: 0 0 0 3px rgba(30, 91, 51, 0.1);
+}
+
+.textarea {
+  min-height: 10vh;
+  resize: none; 
+}
+
+.radioGroup {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5vh 0;
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem; 
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+
+.radioLabel input[type="radio"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    accent-color: #1e5b33;
+}
+
+.submitBtn {
+  padding: 1.5vh;
+  background-color: #1e5b33;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #164a2a;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+
+
+.divider {
+  border: 0;
+  border-top: 1px dashed #a3d9a5;
+  margin: 1.5vh 0;
+}
+
+.cartBuilder {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.cartBuilder .inputGroup {
+    flex: 1;
+}
+
+.addBtn {
+  background-color: #facc15; 
+  color: #422006;
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-align: center;
+  transition: transform 0.1s;
+}
+
+.addBtn:active {
+  transform: scale(0.98);
+}
+
+.cartList {
+  background: #f9fff9;
+  border: 1px solid #ccebc4;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.totalDisplay {
+  text-align: right;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #1e5b33;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 2px solid #a3d9a5;
+}
+
+.cartBuilder .input, .cartBuilder .select {
+  margin: 0; 
+}
